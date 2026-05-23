@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local data / uploads
+backend/data/
+backend/uploads/
+backend/temp/
+
+# Notebooks
+.ipynb_checkpoints/
