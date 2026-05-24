@@ -22,6 +22,8 @@ class ExcelColumnSchema(BaseModel):
 class ExcelSchemaResponse(BaseModel):
     file_name: str
     sheet_name: Optional[str] = None
+    available_sheets: List[str] = Field(default_factory=list)
+    total_rows: int
     total_columns: int
     columns: List[ExcelColumnSchema]
 
