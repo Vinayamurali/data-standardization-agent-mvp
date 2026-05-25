@@ -1,9 +1,13 @@
 from fastapi import FastAPI
 
+from app.standardization.router import router as standardization_router
+
 app = FastAPI(
     title="Data Standardization Agent MVP",
     version="0.1.0"
 )
+
+app.include_router(standardization_router)
 
 
 @app.get("/")
